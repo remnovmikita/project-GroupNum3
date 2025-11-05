@@ -1,0 +1,114 @@
+/*    welcome-mobile        */ 
+.welcome-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px 16px;
+    align-items: center;
+    text-align: center;
+}
+ .welcome-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+ }
+ .welcome-inside {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;    
+ }
+ .welcome-first-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0b0803;
+    text-align: start;
+}
+.welcome-title {
+    font-family: "Aboreto", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #0b0803;
+    width: 288px;
+    text-align: start;
+}
+.welcome-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #0b0803;
+    width: 288px;
+    text-align: start;
+    
+}
+.welcome-button {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 288px;
+    height: 44px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+
+    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+    background: #6f4e37;
+
+}
+.welcome-button-icon {
+    fill: #fff;
+}
+.welcome-photo {
+    border-radius: 40px;
+    width: 100%;
+    height: auto;
+}
+/*    welcome-tablet        */
+@media only screen and (min-width: 768px) {
+   
+.welcome-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px 32px;
+    align-items: center;
+    justify-content: center;
+}
+.welcome-title {
+    width: 336px;
+}
+.welcome-tablet {
+    display: flex;
+    flex-direction: row;
+}
+
+.welcome-photo {
+    border-radius: 40px;
+    width: 100%;
+    height: auto;
+    max-width: 704px; 
+    
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    welcome-desktop        */ 
