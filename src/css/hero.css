@@ -1,75 +1,53 @@
 .hero-section {
+  min-width: 320px;
+  max-width: 375px;
   color: #fff;
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
     url(/img/hero01.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
+  margin: 0 auto;
 }
 
 @media (min-resolution: 192dpi) {
   .hero-section {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.25),
-        rgba(0, 0, 0, 0.25) ;
-      ),
-      url(//img/hero01@2x.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+      url(/img/hero01@2x.jpg);
   }
 }
 
 @media only screen and (min-width: 768px) {
   .hero-section {
-    background-image: linear-gradient (0 4px 4px 0 rgba(0, 0, 0, 0.25)),
-      url(../images/hero/people-bg_mob.jpg);
-  }
-  @media (min-resolution: 192dpi) {
-    .hero-section {
-      background-image: linear-gradient(
-          0 4px 4px 0 rgba(0, 0, 0, 0.25),
-          0 4px 4px 0 rgba(0, 0, 0, 0.25) ;
-        ),
-        url(../images/hero/people-bg_tab@2x.jpg);
-    }
+    max-width: 768px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .hero-section {
-    background-image: linear-gradient(
-        0 4px 4px 0 rgba(0, 0, 0, 0.25),
-        0 4px 4px 0 rgba(0, 0, 0, 0.25) ;
-      ),
-      url(../images/hero/people-bg_desk@2x.jpg);
-  }
-  @media (min-resolution: 192dpi) {
-    .hero-section {
-      background-image: linear-gradient(
-          0 4px 4px 0 rgba(0, 0, 0, 0.25),
-          0 4px 4px 0 rgba(0, 0, 0, 0.25) ;
-        ),
-        url(../images/hero/people-bg_tab@2x.jpg);
-    }
+    min-width: 1440px;
   }
 }
+
 .hero-container {
   padding: 108px 32px;
 }
+
 @media only screen and (min-width: 768px) {
   .hero-container {
-    padding: 311px 176px 311px 32px;
+    padding: 311px 32px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .hero-container {
-    padding: 259px 816px 259px 64px;
+    padding: 259px 64px;
   }
 }
 
 .hero-title {
   max-width: 256px;
   font-family: 'Aboreto', sans-serif;
-
   font-weight: 400;
   font-size: 40px;
   line-height: 1.2;
