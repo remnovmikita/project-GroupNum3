@@ -22,3 +22,21 @@ button{
 address{
     font-style: normal;
 }
+ul,
+ol{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+*{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
