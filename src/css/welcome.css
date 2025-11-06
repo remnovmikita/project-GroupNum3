@@ -109,12 +109,15 @@
         align-items: center;
         justify-content: center;
     }
-    .welcome-photo {
-        width: 1312px;
-        height: auto;
-        max-width: 1312px;
+    .welcome-container {
+        margin-right: 32px;
     }
-
+    .welcome-photo {
+        width: 100%;
+        max-width: 1312px;
+        height: auto;
+        
+    }
     .welcome-title {
         font-size: 48px;
         width: 640px;
