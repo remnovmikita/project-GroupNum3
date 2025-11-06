@@ -102,6 +102,11 @@ margin-bottom: 40px;
         .social-media-list {
            margin-bottom: 0; 
         }
+
+                .icon-footer {
+                    width: 24px;
+                    height: 24px;
+                }
 }
 
 @media screen and (min-width: 1440px) {
@@ -130,6 +135,11 @@ margin-bottom: 40px;
 }
 .footer-logo{
     margin-bottom: 0;
+}
+
+.icon-footer {
+    width: 24px;
+    height: 24px;
 }
 
 }
