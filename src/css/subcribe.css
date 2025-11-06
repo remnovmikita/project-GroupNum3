@@ -183,5 +183,8 @@ picture {
         align-items: start;
         flex-direction: column;
     }
+    .collums{
+        flex: 1;
+    }
 
 }
