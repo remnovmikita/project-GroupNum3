@@ -51,35 +51,46 @@
     padding: 10px 24px;
     width: 288px;
     height: 44px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     color: #fff;
-
     box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
     background: #6f4e37;
+    transition: background-color 300ms ease-in, box-shadow 300ms ease-in, color 300ms ease-in;
 
 }
+.welcome-button:hover,
+.welcome-button:focus,
+.welcome-button:active {
+    background: #e0cbb4;
+    box-shadow: none;
+    color: #0b0803;
+}
+
+.welcome-button:hover .welcome-button-icon,
+.welcome-button:focus .welcome-button-icon,
+.welcome-button:active .welcome-button-icon {
+    fill: #0b0803;
+}
+
 .welcome-button-icon {
     fill: #fff;
+    transition: fill 300ms ease-in;
 }
 .welcome-photo {
     border-radius: 40px;
     width: 100%;
     max-width: 288px;
     height: auto;
-    overflow: hidden;
+    
 }
 /*    welcome-tablet        */
 @media only screen and (min-width: 768px) {
    
-.welcome-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    align-items: center;
-    justify-content: center;
-}
+
+
 .welcome-title {
     width: 336px;
 }
@@ -92,37 +103,28 @@
 }
 
 .welcome-photo {
-    border-radius: 40px;
-    width: 704px;
-    height: auto;
     max-width: 704px;
 }
+.welcome-button {
+    width: 181px;
+
+}
+.welcome-container {
+    margin-right: 32px;
+}
 }
 
-/*    welcome-tablet        */
+/*    welcome-desktop        */
 
 @media only screen and (min-width: 1440px) {
-    .welcome-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-        align-items: center;
-        justify-content: center;
-    }
-    .welcome-container {
-        margin-right: 32px;
-    }
+
     .welcome-photo {
-        width: 100%;
-        max-width: 1312px;
-        height: auto;
-        
+        max-width: 1312px;   
     }
     .welcome-title {
         font-size: 48px;
         width: 640px;
     }
-
     .welcome-text {
         width: 640px;
     }
@@ -139,4 +141,3 @@
 
 
 
-/*    welcome-desktop        */ 
