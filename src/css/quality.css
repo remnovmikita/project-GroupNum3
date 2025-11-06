@@ -1,6 +1,6 @@
 /* ===== QUALITY SECTION ===== */
 
-.container.quality {
+.quality {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,9 +59,9 @@
   overflow: hidden;
 }
 .quality-img {
-  border-radius: 32px;
-  width: 100%;
+  width: 288px;
   height: auto;
+  border-radius: 32px;
   margin-bottom: 32px;
 }
 .quality-item-title {
@@ -106,9 +106,8 @@
   }
 
   .quality-img {
-    width: 100%;
-    height: 194px;
-    object-fit: cover;
+    width: 340px;
+    height: auto;
   }
   .quality-item-wide {
     flex: 0 1 100%;
@@ -117,9 +116,7 @@
 
   .quality-item-wide .quality-img {
     width: 704px;
-    height: 401px;
-    object-fit: cover;
-    border-radius: 32px;
+    height: auto;
   }
 
   .quality-item-title-wide {
@@ -163,7 +160,7 @@
 
   .quality-img {
     width: 421px;
-    height: 240px;
+    height: auto;
   }
   .quality-item-wide {
     max-width: 421px;
@@ -171,7 +168,7 @@
 
   .quality-item-wide .quality-img {
     width: 421px;
-    height: 240px;
+    height: auto;
   }
   .quality-item-title {
     max-width: 421px;
