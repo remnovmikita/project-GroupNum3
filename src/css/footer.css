@@ -76,7 +76,7 @@ margin-bottom: 40px;
     .footer-logo{
         width: 84px;
         height: 36px;
-        
+        margin-bottom: 0;
     }
     .footer-container{
         padding-top: 32px;
@@ -100,7 +100,7 @@ margin-bottom: 40px;
     }
 
         .social-media-list {
-            
+           margin-bottom: 0; 
         }
 }
 
