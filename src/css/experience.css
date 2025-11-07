@@ -30,10 +30,13 @@
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
+  max-width: 288px;
+  margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
   .experience-list {
     gap: 32px;
+    max-width: 704px;
   }
 }
 
