@@ -1,7 +1,5 @@
+<<<<<<< Updated upstream
 /* === TITLE === */
-.container-testimonials {
-}
-
 .testimonials-title-wrap {
   margin-top: 64px;
   margin-bottom: 24px;
@@ -102,4 +100,10 @@
     max-width: 310px;
     min-height: 304px;
   }
+=======
+.test {
+  color: blue;
+  background: #000;
+  background-color: rgb(87, 78, 162);
+>>>>>>> Stashed changes
 }
