@@ -1,0 +1,148 @@
+/*    welcome-mobile        */ 
+.welcome-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px 0;
+    align-items: center;
+    text-align: center;
+}
+ .welcome-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+ }
+ .welcome-inside {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;    
+ }
+ .welcome-container {
+    margin-bottom: 32px;
+ }
+
+ .welcome-first-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0b0803;
+    text-align: start;
+}
+.welcome-title {
+    font-family: "Aboreto", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #0b0803;
+    width: 288px;
+    text-align: start;
+}
+.welcome-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #0b0803;
+    width: 288px;
+    text-align: start;
+}
+.welcome-location {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 288px;
+    height: 44px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+    background: #6f4e37;
+    transition: background-color 300ms ease-in, box-shadow 300ms ease-in, color 300ms ease-in;
+
+}
+.welcome-location:hover,
+.welcome-location:focus,
+.welcome-location:active {
+    background: #e0cbb4;
+    box-shadow: none;
+    color: #0b0803;
+}
+
+.welcome-location:hover .welcome-location-icon,
+.welcome-location:focus .welcome-location-icon,
+.welcome-location:active .welcome-location-icon {
+    fill: #0b0803;
+}
+
+.welcome-location-icon {
+    fill: #fff;
+    transition: fill 300ms ease-in;
+}
+.welcome-photo {
+    border-radius: 40px;
+    width: 100%;
+    max-width: 288px;
+    height: auto;
+    
+}
+/*    welcome-tablet        */
+@media only screen and (min-width: 768px) {
+   
+
+
+.welcome-title {
+    width: 336px;
+}
+.welcome-text {
+    width: 336px;
+}
+.welcome-tablet {
+    display: flex;
+    flex-direction: row;
+}
+
+.welcome-photo {
+    max-width: 704px;
+}
+.welcome-location {
+    width: 181px;
+
+}
+.welcome-container {
+    margin-right: 32px;
+    margin-bottom: 0;
+}
+}
+
+/*    welcome-desktop        */
+
+@media only screen and (min-width: 1440px) {
+
+    .welcome-photo {
+        max-width: 1312px;   
+    }
+    .welcome-title {
+        font-size: 48px;
+        width: 640px;
+    }
+    .welcome-text {
+        width: 640px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+.hero-section {
+  min-width: 320px;
+  max-width: 375px;
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(/img/hero01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+      url(/img/hero01@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero-section {
+    min-width: 1440px;
+  }
+}
+
+.hero-container {
+  padding: 108px 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    padding: 311px 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero-container {
+    padding: 259px 64px;
+  }
+}
+
+.hero-title {
+  max-width: 256px;
+  font-family: 'Aboreto', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    min-width: 560px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero-title {
+    font-size: 56px;
+  }
+}
+.hero-text {
+  max-width: 256px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-text {
+    min-width: 560px;
+  }
+}
+
+.hero-btn {
+  display: block;
+  max-width: 135px;
+  border-radius: 100px;
+  padding: 10px 24px;
+  max-height: 44px;
+  box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+    inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+    inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+  background: #6f4e37;
+  transition: background-color 300ms ease-in;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background: #e0cbb4;
+  box-shadow: none;
+  color: #0b0803;
+}
+
+.hero-link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
