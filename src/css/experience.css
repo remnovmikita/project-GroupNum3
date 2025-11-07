@@ -57,6 +57,7 @@
   .experience-img {
     width: 100%;
     border-radius: 32px;
+    height: auto;
     object-fit: cover;
   }
 }
@@ -66,7 +67,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
-  max-width: 288px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -74,11 +75,13 @@
   flex: 1 1 100%;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .experience-img {
   width: 100%;
   border-radius: 32px;
+  height: auto;
   object-fit: cover;
 }
 

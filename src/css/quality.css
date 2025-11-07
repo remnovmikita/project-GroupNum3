@@ -59,7 +59,7 @@
   overflow: hidden;
 }
 .quality-img {
-  width: 288px;
+  width: 100%;
   height: auto;
   border-radius: 32px;
   margin-bottom: 32px;
