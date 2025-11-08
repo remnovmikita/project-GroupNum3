@@ -15,9 +15,6 @@ document.getElementById("formEmail").addEventListener("submit", function (x) {
 
   const emailValue = userEmail.value.trim();
   const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue);
-   
-  x.preventDefault(); // остановить отправку формы
-
     if (!isValidEmail) {
     x.preventDefault();
     erorEmail.style.display = "inline"; // показать span
