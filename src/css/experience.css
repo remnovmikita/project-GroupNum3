@@ -3,7 +3,13 @@
   margin: 0 auto;
   margin-bottom: 32px;
 }
-
+.experience-img{
+  width: 100%;
+  height: auto;
+}
+.super{
+  height: 391px;
+}
 @media (min-width: 768px) {
   .experience-wrapper {
     max-width: 768px;
@@ -22,6 +28,9 @@
 @media (min-width: 1440px) {
   .experience-title {
     font-size: 48px;
+  }
+  .super{
+    height: auto;
   }
 }
 
