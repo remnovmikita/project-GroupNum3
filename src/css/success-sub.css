@@ -102,9 +102,14 @@ visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 16px;
     
     color: #fff;
-
+    transition: opacity 300ms ease-in-out;
     box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
     background: #6f4e37;
+}
+
+.success-btn-close:hover,
+.success-btn-close:focus{
+    opacity: 0.5;
 }
 @media screen and (min-width: 768px) {
 .overlay h2{
