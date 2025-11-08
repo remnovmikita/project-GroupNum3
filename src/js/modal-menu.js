@@ -1,33 +1,24 @@
 (() => {
-  const mobileMenu = document.querySelector('.js-menu-container');
-  const openMenuBtn = document.querySelector('.js-open-menu');
-  const closeMenuBtn = document.querySelector('.js-close-menu');
-  const anchors = mobileMenu.querySelectorAll('a[href*="#"]');
-
-  const closeMenu = () => {
-    mobileMenu.classList.remove('is-open');
-    openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
+  const refs = {
+    // Додати атрибут data-mobile-open на кнопку відкриття
+    openModalBtn: document.querySelector("[data-mobile-open]"),
+    // Додати атрибут data-mobile-close на кнопку закриття
+    closeModalBtn: document.querySelector("[data-mobile-close]"),
+    // Додати атрибут data-mobile на контейнер мобільного меню
+    modal: document.querySelector("[data-mobile]"),
   };
 
-  const openMenu = () => {
-    mobileMenu.classList.add('is-open');
-    openMenuBtn.setAttribute('aria-expanded', true);
-    bodyScrollLock.disableBodyScroll(document.body);
-  };
+  refs.openModalBtn.addEventListener("click", OpenModal);
+  refs.closeModalBtn.addEventListener("click", CloseModal);
 
-  openMenuBtn.addEventListener('click', openMenu);
-  closeMenuBtn.addEventListener('click', closeMenu);
+  function OpenModal() {
+    // is-open це клас який буде додаватися/забиратися на контейнер мобільного меню при натисканні на кнопки
+    refs.modal.classList.toggle("is-open");
+  }
 
-  anchors.forEach(anchor => {
-    anchor.addEventListener('click', () => {
-      closeMenu(); // закрываем меню
-    });
-  });
+  function CloseModal() {
+    // Додаємо клас для анімації закриття
 
-  // Закрытие при изменении брейкпоинта
-  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-    if (!e.matches) return;
-    closeMenu();
-  });
+    refs.modal.classList.remove("is-open");
+  }
 })();
