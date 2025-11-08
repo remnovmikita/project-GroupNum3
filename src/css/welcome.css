@@ -65,16 +65,13 @@
 
 }
 .welcome-location:hover,
-.welcome-location:focus,
-.welcome-location:active {
-    background: #e0cbb4;
-    color: #0b0803;
+.welcome-location:focus {
+    opacity: 0.5;
 }
 
 .welcome-location:hover .welcome-location-icon,
-.welcome-location:focus .welcome-location-icon,
-.welcome-location:active .welcome-location-icon {
-    fill: #0b0803;
+.welcome-location:focus .welcome-location-icon {
+    opacity: 0.5;
 }
 
 .welcome-location-icon {
