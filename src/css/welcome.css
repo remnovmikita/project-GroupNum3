@@ -61,7 +61,7 @@
     color: #fff;
     box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
     background-color: #6f4e37;
-    transition: background-color 300ms ease-in, box-shadow 300ms ease-in, color 300ms ease-in;
+    transition: background-color 300ms ease-in, box-shadow 300ms ease-in, color 300ms ease-in, opacity 300ms ease-in;
 
 }
 .welcome-location:hover,
@@ -76,7 +76,7 @@
 
 .welcome-location-icon {
     fill: #fff;
-    transition: fill 300ms ease-in;
+    transition: opacity 300ms ease-in;
 }
 .welcome-photo {
     border-radius: 40px;
