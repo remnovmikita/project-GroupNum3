@@ -33,7 +33,6 @@ margin-bottom: 32px;
     border: 1px solid rgba(11, 8, 3, 0.15);
     border-radius: 12px;
     height: 40px;
-    margin-bottom: 24px;
     background: #e0cbb4;
     transition: background-color 300ms ease-in;
 }
@@ -62,6 +61,7 @@ margin-bottom: 32px;
 .subscribe-wriper{
     position: relative;
     width: 100%;
+    margin-bottom: 24px;
 }
 
 
@@ -94,7 +94,6 @@ color: rgba(11, 8, 3, 0.6);
     font-size: 16px;
     line-height: 1.5;
     color: #fff;
-    transition: background-color 300ms ease-in;
 
     border-radius: 100px;
     padding: 10px 24px;
@@ -106,24 +105,14 @@ color: rgba(11, 8, 3, 0.6);
     display: flex;
     gap: 12px;
     justify-content: center;
-}
-@media only screen and (min-width: 768px){
-   .subscribe-btn{
-    width: 158px;
-    margin-left: 24px;
-   }
+    transition: box-shadow 300ms ease-in-out, background 300ms ease-in-out, opacity 300ms ease-in-out;
 }
 .subscribe-btn:hover,
-.subscribe-btn:focus,
-.subscribe-btn:active{
-    background: #e0cbb4;
-    box-shadow: none;
-    color: #0b0803;
-}
-.subscribe-btn:hover .subscribe-icon,
-.subscribe-btn:focus .subscribe-icon,
-.subscribe-btn:active .subscribe-icon{
-    fill: #0b0803;
+.subscribe-btn:focus
+{
+box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+background: #6f4e37;
+opacity: 0.5;
 }
 
 .subscribe-img {
@@ -132,6 +121,14 @@ color: rgba(11, 8, 3, 0.6);
   border-radius: 40px;
   
 }
+@media only screen and (min-width: 768px){
+   .subscribe-btn{
+    width: 158px;
+   }
+}
+
+
+
 
 picture {
   display: block;
@@ -145,11 +142,12 @@ picture {
     }
     .subscribe-wriper{
         width: 340px;
+        margin-right: 24px;
+        margin-bottom: 0;
     }
    .subscribe-input{
     width: 340px;
     height: 40px;
-    margin-bottom: 0;
     
    }
 
@@ -169,14 +167,13 @@ picture {
     .subscribe-h2{
         font-size: 48px;
     }
-    .subscribe-btn{
-        margin-left: 16px;
-    }
     .subscribe-flex{
     flex-direction: row;
     
     }
-
+.subscribe-wriper{
+    margin-right: 16px;
+}
     .collums.collums-text{
         display: flex;
         justify-content: center;
