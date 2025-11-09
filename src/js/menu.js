@@ -9,8 +9,10 @@ document.getElementById("formEmail").addEventListener("submit", function (e) {
 
   CloseMdMenu.addEventListener("click", () => {
     modalMenu.classList.remove("is-open");
+    form.reset();
   });
   CloseMdMenutwo.addEventListener("click", () => {
     modalMenu.classList.remove("is-open");
+    form.reset();
   });
 });
