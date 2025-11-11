@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding: 64px 0;
+    
     align-items: center;
     text-align: center;
 }
@@ -55,38 +55,32 @@
     padding: 10px 24px;
     width: 288px;
     height: 44px;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     color: #fff;
     box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
-    background: #6f4e37;
-    transition: background-color 300ms ease-in, box-shadow 300ms ease-in, color 300ms ease-in;
+    background-color: #6f4e37;
+    transition: background-color 300ms ease-in, box-shadow 300ms ease-in, color 300ms ease-in, opacity 300ms ease-in;
 
 }
 .welcome-location:hover,
-.welcome-location:focus,
-.welcome-location:active {
-    background: #e0cbb4;
-    box-shadow: none;
-    color: #0b0803;
+.welcome-location:focus {
+    opacity: 0.5;
 }
 
 .welcome-location:hover .welcome-location-icon,
-.welcome-location:focus .welcome-location-icon,
-.welcome-location:active .welcome-location-icon {
-    fill: #0b0803;
+.welcome-location:focus .welcome-location-icon {
+    opacity: 0.5;
 }
 
 .welcome-location-icon {
     fill: #fff;
-    transition: fill 300ms ease-in;
+    transition: opacity 300ms ease-in;
 }
 .welcome-photo {
     border-radius: 40px;
     width: 100%;
-    max-width: 288px;
     height: auto;
     
 }
