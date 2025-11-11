@@ -64,14 +64,21 @@ height: 84px;
         font-size: 16px;
         line-height: 1.5;
         color: #0B0803;
+        transition: transform 500ms ease-in-out;
 }
-
+.icon-footer:hover,
+.icon-footer:focus{
+    transform: scale(1.2);
+    
+}
 .icon-footer{
     display: flex;
     align-items: center;
     justify-content: center;
-width: 32px;
- height: 32px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+
     }
 
 
